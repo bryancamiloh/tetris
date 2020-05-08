@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prueba tetrimino O</title>
+
+	<style>
+
+		body {
+			background: #000;
+		}
+
+
+		#areaJuego {
+
+			background: #fff;
+			width: 400px;
+			height: 800px;
+			margin: auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.celda {
+			
+			background: grey;
+			width: 9.1%;
+			flex: none;
+			margin: .5% 0 .5% 0;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		.inactiva {
+			
+			background-color: grey;
+		
+		}
+
+		.activa {
+
+			background-color: yellow;
+
+		}
+
+	</style>
+</head>
+<body>
+	
+	<div id="areaJuego">
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>
+		<div class="celda inactiva"></div>		
+	</div>
+
+	<script src="src/jquery-3.2.1.js"></script>
+	<script src="src/ajax.js" type="text/javascript"></script>
+	<script src="src/tetriminoO.js"></script>
+
+</body>
+</html>
